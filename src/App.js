@@ -8,7 +8,6 @@ import NotFound from './components/NotFound'
 import './App.css'
 
 const App = () => (
-  <BrowserRouter>
     <Switch>
       <Route exact path="/login" component={LoginForm} />
       <Route exact path="/" component={Home} />
@@ -16,7 +15,6 @@ const App = () => (
       <Route exact path="/cart" component={Cart} />
       <Route component={NotFound} />
     </Switch>
-  </BrowserRouter>
 )
 
 export default App
